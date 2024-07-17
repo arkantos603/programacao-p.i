@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Item ao Select</title>
+</head>
+<body>
+    <input type="text" id="novoItemSelect" placeholder="Novo item">
+    <button onclick="adicionarItemSelect()">Adicionar</button>
+    <select id="listaSelect">
+    </select>
+
+    <script>
+        function adicionarItemSelect() {
+            var novoItemInput = document.getElementById("novoItemSelect");
+            var novoItem = novoItemInput.value;
+            var select = document.getElementById("listaSelect");
+            var option = document.createElement("option");
+            option.textContent = novoItem;
+            select.appendChild(option);
+            novoItemInput.value = ""; // Limpa o campo de texto
+        }
+    </script>
+</body>
+</html>

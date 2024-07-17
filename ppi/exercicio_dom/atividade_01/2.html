@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos DOM</title>
+</head>
+<body>
+    <h1>Crie dois exemplos usando os métodos do objeto document:</h1>
+    
+    <!-- Letra a: document.getElementById() -->
+    <h2>getElementById()</h2>
+    <p id="paragrafo1">Qual a capital do Piauí?</p>
+    <button onclick="alterarTexto()">Revelar resposta</button>
+    
+    <!-- Letra b: document.getElementsByTagName() -->
+    <h2>getElementsByTagName()</h2>
+
+    <button onclick="alterarEstilo()">Alterar Estilo da resposta</button>
+    
+    <script>
+        // Função para alterar o texto do parágrafo com id "paragrafo1"
+        function alterarTexto() {
+            // Seleciona o parágrafo pelo ID
+            var paragrafo = document.getElementById('paragrafo1');
+            // Altera o conteúdo do parágrafo
+            paragrafo.textContent = 'Teresina';
+        }
+
+        // Função para alterar o estilo do paragrafo
+        function alterarEstilo() {
+            // Seleciona todos os elementos <p>
+            var paragrafos = document.getElementsByTagName('p');
+            // Altera o estilo de todos os parágrafos
+            for (var i = 0; i < paragrafos.length; i++) {
+                paragrafos[i].style.color = 'red';
+                paragrafos[i].style.fontWeight = 'bold';
+            }
+        }
+    </script>
+</body>
+</html>

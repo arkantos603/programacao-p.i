@@ -1,0 +1,23 @@
+<!-- 
+textContent: Define ou retorna o conteúdo textual de um elemento e de seus descendentes. Ignora tags HTML.
+innerHTML: Define ou retorna o conteúdo HTML de um elemento, incluindo tags HTML.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de innerHTML</title>
+</head>
+<body>
+    <div id="exemplo1">Texto original</div>
+    <div id="exemplo2">Texto original</div>
+    <script>
+        var div = document.getElementById("exemplo1");
+        div.textContent = "Novo texto"; // Define apenas texto simples
+
+        var div = document.getElementById("exemplo2");
+        div.innerHTML = "<strong>Novo texto</strong>"; // Define texto com HTML
+    </script>
+</body>
+</html>

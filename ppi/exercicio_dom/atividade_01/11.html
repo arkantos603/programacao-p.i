@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de itens</title>
+</head>
+<body>
+    <input type="text" id="novoItem" placeholder="Novo item">
+    <button onclick="adicionarItem()">Adicionar</button>
+    <ul id="lista">
+    </ul>
+
+    <script>
+        function adicionarItem() {
+            var novoItemInput = document.getElementById("novoItem");
+            var novoItem = novoItemInput.value;
+            var lista = document.getElementById("lista");
+            var li = document.createElement("li");
+            li.textContent = novoItem;
+            lista.appendChild(li);
+            novoItemInput.value = "";
+        }
+    </script>
+</body>
+</html>

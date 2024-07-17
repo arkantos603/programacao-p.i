@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contar Parágrafos</title>
+</head>
+<body>
+    <h1>Quantos paragrafos temos aqui?</h1>
+
+    <div id="conteudo">
+        <p>Inicio</p>
+        <p>Meio</p>
+        <p>Fim</p>
+    </div>
+    <div id="resultado"></div>
+    <button onclick="contarParagrafos()">Contar Parágrafos</button>
+
+    <script>
+        function contarParagrafos() {
+            //seleciona o id "conteudo"
+            var conteudo = document.getElementById("conteudo");
+            //seleciona o que deve ser contado, no caso "p" de parágrafos
+            var paragrafos = conteudo.getElementsByTagName("p");
+            //mostra o resultado da quantidade de "p"s
+            var resultado = document.getElementById("resultado");
+            resultado.textContent = "Total de parágrafos: " + paragrafos.length;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caixa Alta</title>
+</head>
+<body>
+    <input type="text" id="textoOriginal" placeholder="Digite algo">
+    <input type="text" id="textoCopia" readonly>
+    <button onclick="copiarTexto()">Copiar Texto</button>
+
+    <script>
+        function copiarTexto() {
+            //seleciona "textoOriginal"
+            var textoOriginal = document.getElementById("textoOriginal").value;
+            var textoCopia = document.getElementById("textoCopia");
+            //transforma em caixa alta
+            textoCopia.value = textoOriginal.toUpperCase();
+        }
+    </script>
+</body>
+</html>

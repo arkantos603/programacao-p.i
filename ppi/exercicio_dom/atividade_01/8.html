@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark mode</title>
+</head>
+<body>
+    <p>Dark mode.</p>
+    <button onclick="altoContraste()">Alto Contraste</button>
+    <button onclick="resetarCores()">Resetar Cores</button>
+
+    <script>
+        function altoContraste() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+
+        function resetarCores() {
+            document.body.style.backgroundColor = "";
+            document.body.style.color = "";
+        }
+    </script>
+</body>
+</html>

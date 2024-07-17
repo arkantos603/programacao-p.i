@@ -1,0 +1,170 @@
+@import url('https://fonts.cdnfonts.com/css/minecraftia');
+
+body {
+    margin: 0;
+    font-family: 'Minecraftia', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: rgb(161, 160, 160);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+article {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-color: lightgray;
+}
+
+
+h2 {
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
+#guia {
+    color: rgb(97, 54, 14);
+}
+
+#guia h2 {
+    border-bottom: 2px solid rgb(97, 54, 14);
+}
+
+#sobre h2 {
+    color: rgb(46, 177, 6);
+    border-bottom: 2px solid rgb(46, 177, 6)
+}
+
+#encantamentos h2 {
+    color: indigo;
+    border-bottom: 2px solid indigo
+}
+
+#encantamentos a {
+    padding-left: 330px;
+
+}
+
+#contato h2 {
+    color: rgb(255, 170, 0);
+    border-bottom: 2px solid rgb(255, 170, 0);
+}
+
+#cabecalho {
+    text-align: center;
+    padding: 70px;
+}
+
+#rodape p {
+    font-size: 24px;
+    margin-top: auto;
+}
+
+#guide_links ul li{
+    display: block;
+    color: black;
+    text-align: left;
+}
+
+#lista_contatos ul li{
+    display: block;
+    color: black;
+    text-align: left;
+}
+
+#lista_contatos a:link, #lista_contatos a:visited {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(211, 149, 98);
+    text-decoration: none;
+}
+
+#guide_links a:link, #guide_links a:visited {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(97, 54, 14);
+    text-decoration: underline;
+}
+
+nav li {
+    display: inline-block;
+    margin-top: 11px;
+    margin-right: 50px;
+}
+
+nav a:link, nav a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav a:hover, a:active {
+    color: indigo;
+    text-decoration: underline;
+}
+
+#cabecalho h1 {
+    margin : 0;
+    font-size: 4rem;
+}
+
+#cabecalho {
+    background-image: url('images/grass-block.png'); /* Substitua 'caminho/da/sua/imagem.jpg' pelo caminho da sua imagem */
+    background-size: contain; /* Faz a imagem cobrir todo o cabeçalho */
+    background-position: top; /* Posiciona a imagem no centro do cabeçalho */
+    color: white; /* Define a cor do texto no cabeçalho */
+    text-align: center; /* Alinha o texto ao centro do cabeçalho */
+    padding-top: 50px; /* Adiciona um espaçamento superior para o texto */
+}
+
+#rodape {
+    background-image: url('images/bedrock.png'); /* Substitua 'caminho/da/sua/imagem.jpg' pelo caminho da sua imagem */
+    background-size: contain; /* Faz a imagem cobrir todo o cabeçalho */
+    background-position: top; /* Posiciona a imagem no centro do cabeçalho */
+    height: 20px; /* Defina a altura do cabeçalho conforme necessário */
+    color: white; /* Define a cor do texto no cabeçalho */
+    text-align: center; /* Alinha o texto ao centro do cabeçalho */
+    padding: 40px;
+}
+
+
+#mods a{
+    color: rgb(44, 186, 168)
+}
+
+#mods h2{
+    color: rgb(17, 160, 54);
+    border-bottom: 2px solid rgb(17, 160, 54);
+}
+
+.mod{
+    padding-left:3%;
+}
+
+.mod-description {
+    display: none;
+}
+
+.mod-description:target {
+    display: block;
+}
+
+.acoes, .id-linha {
+    text-align: center;
+    color: #0054a8;
+}
+
+.acoes, .id-sobre {
+    font-size: small;
+    color: rgb(59, 59, 59);
+    padding-left:2%;
+
+}
